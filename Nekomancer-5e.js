@@ -1,4 +1,4 @@
-var iFileName = "Nekomancer.js";
+var iFileName = "Nekomancer-5e.js";
 RequiredSheetVersion("13.2");
 
 SourceList["HB:NM"] = {
@@ -85,6 +85,9 @@ ClassList["nekomancer"] = {
             name : "Neko Summoning",
             source : ["HB:NM", 0],
             minlevel : 1,
+            usages : 1,
+            //usagescalc : ["", "", "", "", "", "", "", "", "", "", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            recovery : "short rest",
             description :   "\n Summon a spectral Neko to fight alongside you as an action, appearing in a 5ft cube within 10ft" + 
                             "\n The Neko follows your commands for up to 10 minutes or until its HP drops to 0, then it disappears" + 
                             "\n Cannot summon another Neko until completing a short or long rest",
@@ -100,12 +103,39 @@ ClassList["nekomancer"] = {
             name : "Neko Channeling",
             source : ["HB:NM", 0],
             minlevel : 2,
+            usages : 1,
+            //usagescalc : ["", "", "", "", "", "", "", "", "", "", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            recovery : "short rest",
             description :   "\n Channel the Nekomata's power to gain spectral claws, two tails, and cat ears" + 
                             "\n Use an action to make two claw attacks and a bonus action to make a tail attack" + 
                             "\n Each attack deals 1d4 + Dexterity modifier damage (slashing for claws, bludgeoning for tails)" + 
                             "\n Channeling lasts 1 minute, usable once per short or long rest",
-            action : ["action", "(Claws) or bonus action (Tail)"]
         },
+        /*"claws" : {
+            name : "Claws",
+            source : ["HB:NM", 0],
+            minlevel : 2,
+            weaponsAdd : ["Claws"],
+            weaponOptions : [{
+                baseWeapon : "unarmed strike",
+                regExpSearch : /^(?=.*claws).*$/i,
+                name : "Claws",
+                source : ["HB:NM", 0],
+                type : AlwaysProf,
+                ability : 2,
+                abilitytodamage : true,
+                damage : [1, 4, "slashing"],
+                range : "Melee, 5/5 ft",
+                selectNow : true,
+                description : "Finesse, magical",
+                isAlwaysProf : true,
+            }],
+            action : [
+                        ["action", "2 Attacks with Claws"],
+                        ["bonus action", "Tail"]
+                ]
+        },
+        doesn't work yet*/
         "subclassfeature3" : {
             name : "Neko Clans",
             source : ["HB:NM", 0],
