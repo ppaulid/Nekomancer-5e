@@ -267,7 +267,7 @@ AddSubClass("nekomancer", "beast clan", {
             minlevel : 3,
             speed : { allModes : "+10" },
             description : desc(["while Neko channeling your claws and tail grows larger and more deadly.",
-                                "The damage dice increases by one size and the nekomancer gains a 10ft bonus to their base",
+                                "The damage dice increases by one size and you gain a 10ft bonus to your base",
                                 "speed."]),
             calcChanges: {
                 atkCalc : [
