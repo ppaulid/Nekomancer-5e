@@ -37,7 +37,6 @@ ClassList.nekomancer = {
     skillstxt : "\n\n" + toUni("Nekomancer") + "Choose two from: Arcana, Performance, Medicine, History, Nature, Survival, and Perception",
     armor: [
         [true, false, false, false],
-        [true, true, false, false]
     ],
     weapons: [
         [true, false],
@@ -175,7 +174,7 @@ ClassList.nekomancer = {
             description : desc(["While neko channeling, gain advantage on initiative and perception checks, and cannot be",
                                 "surprised"]),
             savetxt : {
-                text :  ["While Neko Channeling Adv on Initiative & Perception."]
+                text :  ["Keen Senses during Neko Channeling"]
             }
         },
         "hunting pair" : {
@@ -223,7 +222,7 @@ ClassList.nekomancer = {
             name : "Predator's Leap",
             source : ["DanDw"],
             minlevel : 14,
-            description : desc(["Both the nekomancer and their neko summons can make a supernatural",
+            description : desc(["Both you and your neko summons can make a supernatural",
                                 "leap up to 60 ft in any direction as a bonus action."]),
             action : ["bonus action", "Leap"]
         },
@@ -242,12 +241,6 @@ ClassList.nekomancer = {
                     "Claw and tail attacks deal an additional 1d4 fire damage"
 				]
 			},
-        },
-        "experienced hunters" : {
-            name : "Experienced Hunters",
-            source : ["DanDw"],
-            minlevel : 18,
-            description : desc(["The nekomancer stops summoning young nekos and summons veteran nekos"])
         },
         "veteran neko" : {
             name : "Veteran Neko",
@@ -273,7 +266,7 @@ AddSubClass("nekomancer", "beast clan", {
             source : ["DanDw"],
             minlevel : 3,
             speed : { allModes : "+10" },
-            description : desc(["while channeling Neko the nekomancer's claws and tail grows larger and more deadly.",
+            description : desc(["while Neko channeling your claws and tail grows larger and more deadly.",
                                 "The damage dice increases by one size and the nekomancer gains a 10ft bonus to their base",
                                 "speed."]),
             calcChanges: {
@@ -330,8 +323,8 @@ AddSubClass("nekomancer", "guardian clan", {
             name : "Neko Clans",
             source : ["DanDw"],
             minlevel : 3,
-            description : desc(["while channeling Neko the nekomancer now forms spectral armor around themselves giving",
-                                "them a +1 to AC and temporary hitpoints equal to (proficiency bonus + nekomancer level)."]),
+            description : desc(["while Neko channeling you now form spectral armor around yourself giving",
+                                "you a +1 to AC and temporary hitpoints equal to (proficiency bonus + nekomancer level)."]),
         },
         "subclassfeature9" : {
             name : "Guardian Summon",
@@ -379,8 +372,8 @@ AddSubClass("nekomancer", "charmer clan", {
             name : "Neko Clans",
             source : ["DanDw"],
             minlevel : 3,
-            description : desc(["while Neko channeling the nekomancer's spectral traits can become invisible",
-                                "and they can cover themselves in an illusion as if under the effects of the",
+            description : desc(["while Neko channeling your spectral traits can become invisible",
+                                "and you can cover yourself in an illusion as if under the effects of the",
                                 "spell Disguise self."])
         },
         "subclassfeature9" : {
