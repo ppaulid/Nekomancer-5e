@@ -1,0 +1,11 @@
+Charmer Clan:
+New Level 3 Feature: "Illusory Reflexes"
+Feature Name: Illusory Reflexes
+Description:
+Starting at 3rd level, when you channel your Neko form, your connection to illusion magic enhances your agility and misdirection in combat. While Neko Channeling, you gain the following benefits:
+
+Blurred Form: Attackers have disadvantage on the first melee or ranged attack against you each turn.
+Mystifying Strikes: Your spectral tail strikes leave an illusory afterimage. If you hit with a tail attack, you can impose disadvantage on the target's next attack roll until the start of your next turn.
+Feature Benefits Summary
+Blurred Form (Reaction): Represents your agility and use of illusions, making it harder for enemies to hit you. Similar to the Blur spell but limited to once per turn.
+Mystifying Strikes: Adds a combat utility element to your tail attacks, emphasizing the Charmer Clan's deceptive nature in battle.

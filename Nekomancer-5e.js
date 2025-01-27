@@ -371,10 +371,14 @@ AddSubClass("nekomancer", "charmer clan", {
         "subclassfeature3" : {
             name : "Neko Clans",
             source : ["DanDw"],
+            action : [
+                ["reaction", "Mystifying Strikes (tail attack)"]
+            ],
             minlevel : 3,
-            description : desc(["while Neko channeling your spectral traits can become invisible",
-                                "and you can cover yourself in an illusion as if under the effects of the",
-                                "spell Disguise self."])
+            description : desc(["While Neko Channeling, you gain the following benefits:",
+                                "Blurred Form: Attackers have disadvantage on the first melee or ranged attack against you each turn.",
+                                "Mystifying Strikes (Reaction): Tail attacks create an illusory afterimage, imposing disadvantage on the target's",
+                                "next attack roll until the start of your next turn."])
         },
         "subclassfeature9" : {
             name : "Charmer Summon",
